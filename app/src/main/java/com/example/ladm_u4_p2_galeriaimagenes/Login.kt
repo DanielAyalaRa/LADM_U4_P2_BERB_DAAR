@@ -35,8 +35,10 @@ class Login : AppCompatActivity() {
                         binding.txtPass.setText("")
                         mensaje("SE CREO CUENTA")
                         autenticacion.signOut()
-                    }else{
-                        alertaMensaje("ATENCION","ERROR NO SE CONTRUYO")
+                    }
+                    else{
+                        alertaMensaje("Campos Invalidos","- Error verifique que su correo sea valido.\n" +
+                                "- La contraseña debe ser mayor o igual a 6 caracteres")
                     }
                 }
         }
